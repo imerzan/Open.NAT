@@ -8,6 +8,8 @@
     <FileVersion>2.2.0.0</FileVersion>
 	<RepositoryUrl>https://github.com/imerzan/Open.NAT</RepositoryUrl>
 	<RepositoryType>git</RepositoryType>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup Condition="'$(TargetFramework)'!='netstandard2.0'">
     <Reference Include="System" />
