@@ -10,6 +10,9 @@
 	<RepositoryType>git</RepositoryType>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageId>Open.Nat.imerzan</PackageId>
+	<IncludeContentInPack>true</IncludeContentInPack>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup Condition="'$(TargetFramework)'!='netstandard2.0'">
     <Reference Include="System" />
@@ -25,4 +28,22 @@
     <Compile Remove="Upnp\Messages\Responses\AddPortMappingResponseMessage.cs" />
     <Compile Remove="Upnp\Messages\Responses\DeletePortMappingResponseMessage.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="LICENSE" />
+    <None Remove="README.md" />
+  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>true</Pack>
+			<PackagePath></PackagePath>
+			<Visible>True</Visible>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>true</Pack>
+			<PackagePath></PackagePath>
+			<Visible>True</Visible>
+		</None>
+	</ItemGroup>
 </Project>
